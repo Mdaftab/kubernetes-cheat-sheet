@@ -19,56 +19,60 @@
 - 🧠 Explanations that even your coffee-deprived brain can understand
 - 🛠 Battle-tested by engineers in the trenches
 
-## 🐳 Included Error Codes and States
+## Included Error Codes and States
 
-1. 💥 CrashLoopBackOff
-2. 🖼 ImagePullBackOff
-3. 🚫 ErrImagePull
-4. 🙅‍♂️ ErrImageNeverPull
-5. ⚙ CreateContainerConfigError
-6. 🥾 Evicted
-7. ⏰ DeadlineExceeded
-8. 🔙 BackOff
-9. ⏳ Pending
-10. 🛑 Terminating
-11. 🏁 PodInitializing
-12. 🚷 ContainerCannotRun
+### Common Pod Issues
+1. **CrashLoopBackOff**
+2. **ImagePullBackOff**
+3. **ErrImagePull**
+4. **ErrImageNeverPull**
 
-## 🚀 How to Use
+### Configuration and Resource Errors
+5. **CreateContainerConfigError**
+6. **Evicted**
+7. **DeadlineExceeded**
 
-1. 🔎 Spot an error? Navigate to its guide in this repo.
-2. 📖 Read the brief explanation (we promise it's brief).
-3. 📋 Copy the relevant commands.
-4. 🖥 Paste into your terminal (replace those placeholders!).
-5. 🎉 Watch your Kubernetes clusters bow to your troubleshooting prowess!
+### State and Lifecycle Problems
+8. **BackOff**
+9. **Pending**
+10. **Terminating**
+11. **PodInitializing**
+12. **ContainerCannotRun**
 
-## 💡 Pro Tips
+## How to Use
 
-- 🧪 Test commands in a safe space before unleashing them on production.
-- 🔑 Ensure you've got the right permissions, or prepare for disappointment.
-- 📚 Some commands need node access - make sure you're not locked out!
+1. **Identify** the error you're experiencing in your Kubernetes cluster.
+2. **Navigate** to the corresponding guide in this repository.
+3. **Read** the brief explanation to understand common causes of the issue.
+4. **Copy** the relevant commands from the guide.
+5. **Execute** the commands in your terminal, replacing placeholders with your specific values.
+6. **Follow** the systematic troubleshooting approach provided in each guide.
 
-## 🤝 Contributing
+## Best Practices
 
-Got a killer troubleshooting command? We want it!
+- Always **test commands** in a non-production environment before applying them to critical systems.
+- Ensure you have the necessary **permissions** in your Kubernetes cluster before executing commands.
+- Some commands may require direct **node access**; verify your access levels before attempting these.
+- **Familiarize** yourself with the commands in a test environment before using them in production.
 
-1. 🍴 Fork this bad boy
-2. 🌿 Create a feature branch
-3. 🖊 Commit your changes
-4. 🚀 Push to the branch
-5. 🎭 Create a new Pull Request
+## Contributing
 
-## 📜 License
+We welcome contributions to enhance these troubleshooting guides. If you have additional commands or improvements:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. (It's basically "use it, but don't blame us" in legalese.)
+1. **Fork** the repository
+2. **Create** a new branch for your changes
+3. **Make** your changes and commit them with clear, concise messages
+4. **Push** your changes to your fork
+5. **Submit** a pull request with a description of your changes
 
-## ⚠️ Disclaimer
+Please ensure your contributions maintain the existing format and provide clear explanations for any new commands.
 
-These guides are provided as-is. We're not responsible for any clusters you might accidentally set on fire. Use responsibly!
+## License
 
-## 🙏 Acknowledgments
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- 🍻 To all the DevOps engineers who've banged their heads against Kubernetes issues
-- 💖 The Kubernetes community, for making a system complex enough to warrant this guide
+## Disclaimer
 
-Remember: In Kubernetes, no one can hear you scream... but with these guides, you won't need to! Happy troubleshooting! 🎉🚀
+These troubleshooting guides are provided as-is, without warranty of any kind. Always test commands in a safe environment before applying them to production systems.
+
+Happy troubleshooting!
