@@ -14,30 +14,36 @@
 
 ## 🎯 Why This Repo?
 
-- 🔍 12 Comprehensive guides for common K8s headaches
+- 🔍 Comprehensive guides for common K8s headaches
 - ⚡ Quick-copy commands for rapid troubleshooting
 - 🧠 Explanations that even your coffee-deprived brain can understand
 - 🛠 Battle-tested by engineers in the trenches
 
-## Included Error Codes and States
+## Table of Contents
 
-### Common Pod Issues
-1. **CrashLoopBackOff**
-2. **ImagePullBackOff**
-3. **ErrImagePull**
-4. **ErrImageNeverPull**
+### [Pod Lifecycle Issues](./troubleshooting/pod-lifecycle/)
+- [Pending Pods](./troubleshooting/pod-lifecycle/pending.md)
+- [Pod Initializing](./troubleshooting/pod-lifecycle/podinitializing.md)
+- [Terminating Pods](./troubleshooting/pod-lifecycle/terminating.md)
 
-### Configuration and Resource Errors
-5. **CreateContainerConfigError**
-6. **Evicted**
-7. **DeadlineExceeded**
+### [Container Issues](./troubleshooting/container-issues/)
+- [CrashLoopBackOff](./troubleshooting/container-issues/crashloopbackoff.md)
+- [ContainerCannotRun](./troubleshooting/container-issues/containercannotrun.md)
+- [OOMKilled](./troubleshooting/container-issues/oomkilled.md)
 
-### State and Lifecycle Problems
-8. **BackOff**
-9. **Pending**
-10. **Terminating**
-11. **PodInitializing**
-12. **ContainerCannotRun**
+### [Image Issues](./troubleshooting/image-issues/)
+- [ImagePullBackOff](./troubleshooting/image-issues/imagepullbackoff.md)
+- [ErrImagePull](./troubleshooting/image-issues/errimagepull.md)
+- [ErrImageNeverPull](./troubleshooting/image-issues/errimagenerverpull.md)
+
+### [Configuration Issues](./troubleshooting/config-issues/)
+- [CreateContainerConfigError](./troubleshooting/config-issues/createcontainerconfigerror.md)
+- [Evicted](./troubleshooting/config-issues/evicted.md)
+- [DeadlineExceeded](./troubleshooting/config-issues/deadlineexceeded.md)
+- [BackOff](./troubleshooting/config-issues/backoff.md)
+
+### [Advanced Troubleshooting](./troubleshooting/)
+- [Multi-Resource Issues](./troubleshooting/multi-resource-troubleshooting.md)
 
 ## How to Use
 
@@ -55,14 +61,29 @@
 - Some commands may require direct **node access**; verify your access levels before attempting these.
 - **Familiarize** yourself with the commands in a test environment before using them in production.
 
+## Repository Structure
+
+```
+kubernetes-cheat-sheet/
+├── troubleshooting/              # Main troubleshooting content
+│   ├── pod-lifecycle/            # Pod lifecycle issues
+│   ├── container-issues/         # Container runtime problems
+│   ├── image-issues/             # Image pull and registry issues
+│   ├── config-issues/            # Configuration related problems
+│   ├── networking/               # Network-related troubleshooting
+│   └── storage/                  # Persistent storage issues
+├── templates/                    # Document templates for consistency
+└── scripts/                      # Validation and helper scripts
+```
+
 ## Contributing
 
 We welcome contributions to enhance these troubleshooting guides. If you have additional commands or improvements:
 
 1. **Fork** the repository
 2. **Create** a new branch for your changes
-3. **Make** your changes and commit them with clear, concise messages
-4. **Push** your changes to your fork
+3. **Use** the template in `templates/troubleshooting-template.md` for new guides
+4. **Validate** your changes with `scripts/validate-format.sh`
 5. **Submit** a pull request with a description of your changes
 
 Please ensure your contributions maintain the existing format and provide clear explanations for any new commands.
