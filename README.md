@@ -21,6 +21,10 @@
 
 ## Table of Contents
 
+### [Common Everyday Scenarios](./common-scenarios.md)
+- Real-world problems mapped to troubleshooting guides
+- Common patterns and solutions for daily Kubernetes challenges
+
 ### [Pod Lifecycle Issues](./troubleshooting/pod-lifecycle/)
 - [Pending Pods](./troubleshooting/pod-lifecycle/pending.md)
 - [Pod Initializing](./troubleshooting/pod-lifecycle/podinitializing.md)
@@ -45,14 +49,18 @@
 ### [Advanced Troubleshooting](./troubleshooting/)
 - [Multi-Resource Issues](./troubleshooting/multi-resource-troubleshooting.md)
 
+### [Automated Scripts](./scripts/)
+- Automated diagnostic and troubleshooting utilities
+
 ## How to Use
 
 1. **Identify** the error you're experiencing in your Kubernetes cluster.
-2. **Navigate** to the corresponding guide in this repository.
-3. **Read** the brief explanation to understand common causes of the issue.
-4. **Copy** the relevant commands from the guide.
-5. **Execute** the commands in your terminal, replacing placeholders with your specific values.
-6. **Follow** the systematic troubleshooting approach provided in each guide.
+2. **Check** the [Common Scenarios](./common-scenarios.md) guide for everyday issues.
+3. **Navigate** to the corresponding guide in this repository.
+4. **Read** the brief explanation to understand common causes of the issue.
+5. **Copy** the relevant commands from the guide.
+6. **Execute** the commands in your terminal, replacing placeholders with your specific values.
+7. **Follow** the systematic troubleshooting approach provided in each guide.
 
 ## Best Practices
 
@@ -65,15 +73,19 @@
 
 ```
 kubernetes-cheat-sheet/
-├── troubleshooting/              # Main troubleshooting content
-│   ├── pod-lifecycle/            # Pod lifecycle issues
-│   ├── container-issues/         # Container runtime problems
-│   ├── image-issues/             # Image pull and registry issues
-│   ├── config-issues/            # Configuration related problems
-│   ├── networking/               # Network-related troubleshooting
-│   └── storage/                  # Persistent storage issues
-├── templates/                    # Document templates for consistency
-└── scripts/                      # Validation and helper scripts
+├── common-scenarios.md         # Everyday Kubernetes issues and solutions
+├── troubleshooting/            # Main troubleshooting content
+│   ├── pod-lifecycle/          # Pod lifecycle issues
+│   ├── container-issues/       # Container runtime problems
+│   ├── image-issues/           # Image pull and registry issues
+│   ├── config-issues/          # Configuration related problems
+│   ├── networking/             # Network-related troubleshooting
+│   └── storage/                # Persistent storage issues
+├── scripts/                    # Automated diagnostic scripts
+├── templates/                  # Document templates for consistency
+├── LICENSE                     # MIT License
+├── README.md                   # This file
+└── CLAUDE.md                   # Guide for Claude AI assistant
 ```
 
 ## Contributing
